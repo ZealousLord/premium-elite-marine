@@ -1,0 +1,74 @@
+/* contact.css */
+
+/* ── Contact Info Row ─────────────────────────────────────────── */
+.contact-info { background: var(--navy); }
+.contact-info__grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; }
+.ci-card {
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  backdrop-filter: blur(var(--glass-blur)); border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem; text-align: center; transition: all .3s ease;
+}
+.ci-card:hover { border-color: rgba(194,162,124,.4); transform: translateY(-4px); box-shadow: var(--shadow-gold); }
+.ci-card__icon {
+  width: 64px; height: 64px; border-radius: 50%; margin: 0 auto 1.5rem;
+  background: linear-gradient(135deg,rgba(194,162,124,.15),rgba(194,162,124,.04));
+  border: 1px solid rgba(194,162,124,.25);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--sand); font-size: 1.5rem;
+}
+.ci-card__label { font-size: .7rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--sand); margin-bottom: .6rem; }
+.ci-card__value { font-family: var(--font-display); font-size: 1.2rem; color: var(--white); line-height: 1.4; }
+.ci-card__sub   { font-size: .84rem; color: var(--gray-400); margin-top: .3rem; }
+
+/* ── WhatsApp CTA Card ────────────────────────────────────────── */
+.wa-card {
+  background: linear-gradient(135deg, rgba(37,211,102,.08), rgba(18,140,126,.06));
+  border: 1px solid rgba(37,211,102,.25); border-radius: var(--radius-lg);
+  padding: 3rem; text-align: center; margin-bottom: 1px;
+  display: flex; flex-direction: column; align-items: center; gap: 1rem;
+}
+.wa-card__icon { font-size: 3rem; color: #25D366; }
+.wa-card__title { font-family: var(--font-display); font-size: 1.8rem; color: var(--white); }
+.wa-card__sub   { font-size: .95rem; color: var(--gray-400); max-width: 400px; line-height: 1.7; }
+
+/* ── Form Section ─────────────────────────────────────────────── */
+.contact-form-section { background: var(--navy-mid); }
+.contact-form-wrap {
+  display: grid; grid-template-columns: 1fr 1.6fr; gap: 5rem; align-items: start;
+}
+.cfw-aside {}
+.cfw-aside__title { font-family: var(--font-display); font-size: 2.2rem; color: var(--white); margin-bottom: 1rem; }
+.cfw-aside__text  { font-size: .95rem; color: var(--gray-400); line-height: 1.8; margin-bottom: 2rem; }
+.cfw-aside__list  { display: flex; flex-direction: column; gap: .9rem; }
+.cfw-aside__item  { display: flex; align-items: center; gap: .75rem; font-size: .9rem; color: var(--white); }
+.cfw-aside__item i { color: var(--sand); font-size: .85rem; }
+
+/* ── Enquiry Form ─────────────────────────────────────────────── */
+.enquiry-form {
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  backdrop-filter: blur(var(--glass-blur)); border-radius: var(--radius-lg); padding: 3rem;
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+.form-group { display: flex; flex-direction: column; gap: .5rem; margin-bottom: 1.25rem; }
+.form-group:last-child { margin-bottom: 0; }
+.form-label {
+  font-size: .76rem; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--sand);
+}
+.form-label span { color: #e05050; margin-left: .2rem; }
+.form-control {
+  background: rgba(10,31,51,.6); border: 1px solid rgba(194,162,124,.2);
+  border-radius: var(--radius-sm); padding: .85rem 1.1rem;
+  color: var(--white); font-size: .9rem;
+  transition: border-color .25s, box-shadow .25s; outline: none;
+  -webkit-appearance: none; appearance: none;
+}
+.form-control::placeholder { color: var(--gray-600); }
+.form-control:focus { border-color: rgba(194,162,124,.55); box-shadow: 0 0 0 3px rgba(194,162,124,.1); }
+.form-control option { background: var(--navy); color: var(--white); }
+textarea.form-control { resize: vertical; min-height: 130px; }
+.form-submit { width: 100%; padding: 1rem; font-size: .88rem; }
+
+/* ── Responsive ───────────────────────────────────────────────── */
+@media (max-width: 900px)  { .contact-form-wrap { grid-template-columns: 1fr; gap: 3rem; } .contact-info__grid { grid-template-columns: 1fr; } }
+@media (max-width: 600px)  { .form-row { grid-template-columns: 1fr; } .enquiry-form { padding: 2rem 1.5rem; } }

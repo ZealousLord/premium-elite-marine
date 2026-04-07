@@ -1,0 +1,86 @@
+/* about.css */
+
+/* ── About Story ──────────────────────────────────────────────── */
+.about-story { background: var(--navy); }
+.about-story__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.about-story__img-wrap { position: relative; border-radius: var(--radius-lg); overflow: hidden; }
+.about-story__img { width: 100%; height: 520px; object-fit: cover; display: block; border-radius: var(--radius-lg); }
+.about-story__frame { position: absolute; inset: -14px; border: 1px solid rgba(194,162,124,.2); border-radius: calc(var(--radius-lg)+8px); pointer-events: none; }
+.about-story__text { color: var(--gray-400); font-size: 1rem; line-height: 1.88; margin-bottom: 1.5rem; }
+
+/* ── Mission / Vision ─────────────────────────────────────────── */
+.mv-section { background: var(--navy-mid); }
+.mv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.mv-card {
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  backdrop-filter: blur(var(--glass-blur)); border-radius: var(--radius-lg);
+  padding: 3rem; position: relative; overflow: hidden;
+  transition: all .3s ease;
+}
+.mv-card:hover { border-color: rgba(194,162,124,.4); transform: translateY(-4px); }
+.mv-card__num {
+  font-family: var(--font-display); font-size: 5rem; font-weight: 700;
+  color: rgba(194,162,124,.08); position: absolute; top: 1rem; right: 1.5rem; line-height: 1;
+}
+.mv-card__icon { color: var(--sand); font-size: 1.6rem; margin-bottom: 1.5rem; }
+.mv-card__title { font-family: var(--font-display); font-size: 1.8rem; color: var(--white); margin-bottom: 1rem; }
+.mv-card__text { color: var(--gray-400); font-size: .95rem; line-height: 1.8; }
+
+/* ── Stats Counter Row ────────────────────────────────────────── */
+.stats-section { background: var(--navy); border-top: 1px solid rgba(194,162,124,.08); border-bottom: 1px solid rgba(194,162,124,.08); }
+.stats-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: rgba(194,162,124,.08); }
+.stat-item {
+  background: var(--navy); text-align: center; padding: 3.5rem 2rem;
+  position: relative; transition: background .3s ease;
+}
+.stat-item:hover { background: var(--navy-mid); }
+.stat-num {
+  font-family: var(--font-display); font-size: clamp(2.5rem,5vw,4rem);
+  font-weight: 700; color: var(--sand); line-height: 1; margin-bottom: .5rem;
+}
+.stat-lbl { font-size: .78rem; color: var(--gray-400); letter-spacing: .1em; text-transform: uppercase; }
+
+/* ── Expertise Grid ───────────────────────────────────────────── */
+.expertise-section { background: var(--navy-deep); }
+.expertise-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+.exp-card {
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  backdrop-filter: blur(var(--glass-blur)); border-radius: var(--radius-lg);
+  padding: 2rem; transition: all .3s ease;
+}
+.exp-card:hover { border-color: rgba(194,162,124,.4); transform: translateY(-4px); box-shadow: var(--shadow-gold); }
+.exp-card__icon {
+  width: 50px; height: 50px; border-radius: var(--radius-md);
+  background: rgba(194,162,124,.1); border: 1px solid rgba(194,162,124,.2);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--sand); font-size: 1.1rem; margin-bottom: 1.25rem;
+}
+.exp-card__title { font-family: var(--font-display); font-size: 1.2rem; color: var(--white); margin-bottom: .6rem; }
+.exp-card__text  { font-size: .87rem; color: var(--gray-400); line-height: 1.7; }
+
+/* ── Dubai Operations ─────────────────────────────────────────── */
+.dubai-section { background: var(--navy-mid); position: relative; overflow: hidden; }
+.dubai-section::before {
+  content: ''; position: absolute; inset: 0;
+  background: url('../assets/images/hero-yacht.png') center/cover no-repeat;
+  opacity: .06;
+}
+.dubai-content { position: relative; text-align: center; max-width: 720px; margin: 0 auto; }
+.dubai-features { display: flex; justify-content: center; gap: 3rem; margin-top: 3rem; flex-wrap: wrap; }
+.dubai-feat { text-align: center; }
+.dubai-feat__icon { color: var(--sand); font-size: 1.6rem; margin-bottom: .75rem; }
+.dubai-feat__title { font-family: var(--font-display); font-size: 1.1rem; color: var(--white); margin-bottom: .3rem; }
+.dubai-feat__text  { font-size: .84rem; color: var(--gray-400); }
+
+/* ── Responsive ───────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .about-story__grid { grid-template-columns: 1fr; gap: 3rem; }
+  .mv-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2,1fr); }
+  .expertise-grid { grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 580px) {
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .expertise-grid { grid-template-columns: 1fr; }
+  .dubai-features { gap: 2rem; }
+}

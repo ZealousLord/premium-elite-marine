@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Premium Elite Marine Services Gallery – Browse our fleet of luxury yachts serviced in Dubai and see our maintenance, cleaning, and refitting work in action."/>
+  <title>Gallery | Premium Elite Marine Services LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/global.css"/>
+  <link rel="stylesheet" href="css/gallery.css"/>
+</head>
+<body>
+<div id="page-transition" class="page-transition" aria-hidden="true"></div>
+
+<nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__container">
+    <a href="index.html" class="nav__logo">
+      <img src="assets/images/logo.png" class="nav__logo-img" alt="Premium Elite Marine Services LLC" onerror="this.style.display='none'"/>
+      </a>
+    <div class="nav__overlay" id="nav-overlay" aria-hidden="true"></div>
+    <ul class="nav__links" id="nav-links" role="menubar">
+      <li><a href="index.html"    class="nav__link">Home</a></li>
+      <li><a href="about.html"    class="nav__link">About</a></li>
+      <li><a href="services.html" class="nav__link">Services</a></li>
+      <li><a href="gallery.html"  class="nav__link">Gallery</a></li>
+      <li><a href="contact.html"  class="nav__link">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/971525790009" class="btn btn--gold nav__cta" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Get a Quote</a>
+    <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero" aria-label="Gallery Hero">
+  <div class="page-hero__bg" style="background-image:url('assets/images/gallery-yacht2.png');" aria-hidden="true"></div>
+  <div class="page-hero__overlay" aria-hidden="true"></div>
+  <div class="container page-hero__content">
+    <span class="section-label">Our Fleet &amp; Work</span>
+    <div class="gold-line"></div>
+    <h1 class="page-hero__title">Gallery</h1>
+    <p class="page-hero__subtitle">A visual showcase of the luxury vessels we service, our expert craftsmanship, and the results we deliver.</p>
+  </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section class="gallery-section section" id="gallery-main" aria-label="Photo gallery">
+  <div class="container">
+
+    <!-- Filter Bar -->
+    <div class="gallery-filter reveal" role="tablist" aria-label="Gallery filter">
+      <button class="gf-btn active" data-filter="all"         role="tab" aria-selected="true"  id="filter-all">All</button>
+      <button class="gf-btn"        data-filter="yachts"      role="tab" aria-selected="false" id="filter-yachts">Yachts</button>
+      <button class="gf-btn"        data-filter="maintenance" role="tab" aria-selected="false" id="filter-maintenance">Maintenance</button>
+      <button class="gf-btn"        data-filter="repairs"     role="tab" aria-selected="false" id="filter-repairs">Repairs</button>
+      <button class="gf-btn"        data-filter="cleaning"    role="tab" aria-selected="false" id="filter-cleaning">Cleaning</button>
+      <button class="gf-btn"        data-filter="refitting"   role="tab" aria-selected="false" id="filter-refitting">Refitting</button>
+    </div>
+
+    <!-- Masonry Grid -->
+    <div class="gallery-grid" id="gallery-grid">
+
+      <div class="gallery-item" data-category="yachts" data-caption="Luxury Superyacht – Dubai Marina">
+        <img src="assets/images/gallery-yacht1.png" alt="Luxury superyacht berthed at Dubai Marina" loading="lazy"/>
+        <div class="gallery-item__overlay">
+          <div class="gallery-item__title">Superyacht at Dubai Marina</div>
+          <div class="gallery-item__tag">Yachts</div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="maintenance" data-caption="Expert Engine Maintenance">
+        <img src="assets/images/maintenance-work.png" alt="Marine technicians servicing a yacht engine" loading="lazy"/>
+        <div class="gallery-item__overlay">
+          <div class="gallery-item__title">Engine Maintenance in Progress</div>
+          <div class="gallery-item__tag">Maintenance</div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="yachts" data-caption="Open Sea – Bow Wave">
+        <img src="assets/images/gallery-yacht2.png" alt="Yacht cruising at speed" loading="lazy"/>
+        <div class="gallery-item__overlay">
+          <div class="gallery-item__title">Open Sea Passage</div>
+          <div class="gallery-item__tag">Yachts</div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="cleaning" data-caption="Professional Yacht Detailing">
+        <img src="assets/images/gallery-cleaning.png" alt="Professional yacht cleaning and polishing" loading="lazy"/>
+        <div class="gallery-item__overlay">
+          <div class="gallery-item__title">Professional Detailing</div>
+          <div class="gallery-item__tag">Cleaning</div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="repairs" data-caption="Fiberglass Hull Repair">
+        <img src="assets/images/hull-refitting.png" alt="Professional yacht Fiberglass Hull Repair" loading="lazy"/>
+        <div class="gallery-item__overlay">
+          <div class="gallery-item__title">Fiberglass Hull Repair</div>
+          <div class="gallery-item__tag">Repairs</div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="refitting" data-caption="Full Yacht Refit Project">
+        <img src="assets/images/yacht-refit.png" alt="Professional Full Yacht Refit Project" loading="lazy"/>
+        <div class="gallery-item__overlay">
+          <div class="gallery-item__title">Complete Refit Project</div>
+          <div class="gallery-item__tag">Refitting</div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="maintenance" data-caption="Electrical Systems Upgrade">
+        <img src="assets/images/electrical-systems-upgrade.png" alt="Professional Yacht Electrical Systems Upgrade" loading="lazy"/>
+        <div class="gallery-item__overlay">
+          <div class="gallery-item__title">Electrical Systems Upgrade</div>
+          <div class="gallery-item__tag">Maintenance</div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="yachts" data-caption="Arabian Gulf Sailing">
+        <img src="assets/images/arabian-gulf-sailing.png" alt="Professional Yacht Arabian Gulf Sailing" loading="lazy"/>
+        <div class="gallery-item__overlay">
+          <div class="gallery-item__title">Arabian Gulf Sailing</div>
+          <div class="gallery-item__tag">Yachts</div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="cleaning" data-caption="Interior Deep Clean">
+        <img src="assets/images/interior-deep-clean.png" alt="Professional Yacht Interior Deep Clean" loading="lazy"/>
+        <div class="gallery-item__overlay">
+          <div class="gallery-item__title">Interior Deep Clean</div>
+          <div class="gallery-item__tag">Cleaning</div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="repairs" data-caption="Navigation System Install">
+        <img src="assets/images/navigations-install.png" alt="Professional Yacht Navigation System Install" loading="lazy"/>
+        <div class="gallery-item__overlay">
+          <div class="gallery-item__title">Navigation System Install</div>
+          <div class="gallery-item__tag">Repairs</div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="refitting" data-caption="Hull Antifouling">
+        <img src="assets/images/hull-antifouling.png" alt="Professional Yacht Hull Antifouling" loading="lazy"/>
+        <div class="gallery-item__overlay">
+          <div class="gallery-item__title">Hull Painting &amp; Antifouling</div>
+          <div class="gallery-item__tag">Refitting</div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="maintenance" data-caption="AC System Overhaul">
+        <img src="assets/images/ac-repair-maintainence.png" alt="Professional Yacht AC System Overhaul" loading="lazy"/>
+        <div class="gallery-item__overlay">
+          <div class="gallery-item__title">AC System Overhaul</div>
+          <div class="gallery-item__tag">Maintenance</div>
+        </div>
+      </div>
+
+    </div><!-- /gallery-grid -->
+  </div>
+</section>
+
+<!-- BEFORE / AFTER SLIDER -->
+<section class="ba-section section" id="before-after" aria-label="Before and after comparison">
+  <div class="container">
+    <div class="section-header section-header--center reveal">
+      <span class="section-label">The Transformation</span>
+      <div class="gold-line gold-line--center"></div>
+      <h2 class="section-title">Before &amp; After</h2>
+      <p class="section-subtitle">Drag the slider to see the dramatic difference our detailing and restoration work makes.</p>
+    </div>
+    <div class="ba-wrapper reveal">
+      <div class="before-after" id="ba-slider-1" aria-label="Before and after comparison slider">
+        <!-- Before -->
+        <div class="ba-before">
+          <img src="assets/images/after-maintenance.jpg" alt="Before maintenance"/>
+        </div>
+        <!-- After (clipped) -->
+        <div class="ba-after">
+          <img src="assets/images/before-maintenance.jpg" alt="After maintenance and cleaning"/>
+        </div>
+        <!-- Handle -->
+        <div class="ba-handle" aria-hidden="true"></div>
+        <span class="ba-label ba-label--before" aria-hidden="true">Before</span>
+        <span class="ba-label ba-label--after"  aria-hidden="true">After</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner" aria-label="Book a service">
+  <div class="container">
+    <h2 class="cta-banner__title reveal">Love What You See? <span class="text-gold">Let's Work Together.</span></h2>
+    <p class="cta-banner__subtitle reveal reveal-delay-1">Get in touch to discuss your vessel's needs and receive a personalised quote.</p>
+    <div class="cta-banner__actions reveal reveal-delay-2">
+      <a href="contact.html" class="btn btn--gold btn--large" id="gallery-cta-btn">Get a Free Quote</a>
+      <a href="services.html" class="btn btn--outline btn--large" id="gallery-svc-btn">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <div class="footer__logo-name">PREMIUM ELITE</div>
+        <div class="footer__logo-tagline">Marine Services LLC</div>
+        <p class="footer__bio">Dubai's premier luxury marine services company. Engineering excellence since 2009.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/971525790009" class="footer__social-link" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer__col-title">Quick Links</h4>
+        <ul class="footer__col-links">
+          <li><a href="index.html"    class="footer__col-link">Home</a></li>
+          <li><a href="about.html"    class="footer__col-link">About Us</a></li>
+          <li><a href="services.html" class="footer__col-link">Our Services</a></li>
+          <li><a href="gallery.html"  class="footer__col-link">Gallery</a></li>
+          <li><a href="contact.html"  class="footer__col-link">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__col-title">Services</h4>
+        <ul class="footer__col-links">
+          <li><a href="services.html" class="footer__col-link">Yacht Maintenance</a></li>
+          <li><a href="services.html" class="footer__col-link">Engine Repair</a></li>
+          <li><a href="services.html" class="footer__col-link">Yacht Detailing</a></li>
+          <li><a href="services.html" class="footer__col-link">Fiberglass Repair</a></li>
+          <li><a href="services.html" class="footer__col-link">Emergency Repairs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__col-title">Contact</h4>
+        <div class="footer__contact-item"><i class="fa-solid fa-location-dot"></i><span class="footer__contact-text">Dubai Marina, Dubai, UAE</span></div>
+        <div class="footer__contact-item"><i class="fa-solid fa-phone"></i><span class="footer__contact-text">+971 52 579 0009</span></div>
+        <div class="footer__contact-item"><i class="fa-solid fa-envelope"></i><span class="footer__contact-text">info@premiumelitemarine.ae</span></div>
+      </div>
+    </div>
+    <div class="footer__partners">
+      <p class="footer__partners-label">Our Partners</p>
+      <div class="footer__partners-links">
+        <a href="https://d3yachtcharter.com/"        class="footer__partner-link" target="_blank" rel="noopener">D3 Yacht Charter</a>
+        <span style="color:var(--gray-600)">·</span>
+        <a href="https://dubaipremiumyachts.com/"    class="footer__partner-link" target="_blank" rel="noopener">Dubai Premium Yachts</a>
+        <span style="color:var(--gray-600)">·</span>
+        <a href="https://thepremiumwatersports.com/" class="footer__partner-link" target="_blank" rel="noopener">Dubai Premium Watersports</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">© 2024 Premium Elite Marine Services LLC. All rights reserved.</p>
+      <a href="contact.html" class="footer__bottom-link">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="lightbox__content">
+    <button id="lb-close" class="lb-close" aria-label="Close lightbox"><i class="fa-solid fa-xmark"></i></button>
+    <button id="lb-prev"  class="lb-nav lb-nav--prev" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+    <button id="lb-next"  class="lb-nav lb-nav--next" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+    <img id="lb-img" src="" alt="Gallery image full view"/>
+    <p id="lb-caption"></p>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/gallery.js"></script>
+</body>
+</html>

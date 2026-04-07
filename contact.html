@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contact Premium Elite Marine Services LLC in Dubai. Get a free quote for yacht maintenance, engine repair, detailing and all marine services via phone, email or WhatsApp."/>
+  <title>Contact Us | Premium Elite Marine Services LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/global.css"/>
+  <link rel="stylesheet" href="css/contact.css"/>
+</head>
+<body>
+<div id="page-transition" class="page-transition" aria-hidden="true"></div>
+
+<nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__container">
+    <a href="index.html" class="nav__logo">
+      <img src="assets/images/logo.png" class="nav__logo-img" alt="Premium Elite Marine Services LLC" onerror="this.style.display='none'"/>
+      </a>
+    <div class="nav__overlay" id="nav-overlay" aria-hidden="true"></div>
+    <ul class="nav__links" id="nav-links" role="menubar">
+      <li><a href="index.html"    class="nav__link">Home</a></li>
+      <li><a href="about.html"    class="nav__link">About</a></li>
+      <li><a href="services.html" class="nav__link">Services</a></li>
+      <li><a href="gallery.html"  class="nav__link">Gallery</a></li>
+      <li><a href="contact.html"  class="nav__link">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/971525790009" class="btn btn--gold nav__cta" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Get a Quote</a>
+    <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero" aria-label="Contact Hero">
+  <div class="page-hero__bg" style="background-image:url('assets/images/hero-yacht.png');" aria-hidden="true"></div>
+  <div class="page-hero__overlay" aria-hidden="true"></div>
+  <div class="container page-hero__content">
+    <span class="section-label">Reach Out</span>
+    <div class="gold-line"></div>
+    <h1 class="page-hero__title">Contact Us</h1>
+    <p class="page-hero__subtitle">We'd love to hear about your vessel and how we can help. Get in touch for a free, no-obligation quote.</p>
+  </div>
+</section>
+
+<!-- CONTACT INFO -->
+<section class="contact-info section" id="contact-info">
+  <div class="container">
+    <div class="section-header section-header--center reveal">
+      <span class="section-label">Get In Touch</span>
+      <div class="gold-line gold-line--center"></div>
+      <h2 class="section-title">We're Here For You</h2>
+    </div>
+    <div class="contact-info__grid" data-gsap="stagger">
+      <div class="ci-card" id="ci-location">
+        <div class="ci-card__icon"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="ci-card__label">Our Location</div>
+        <div class="ci-card__value">Dubai Marina</div>
+        <div class="ci-card__sub">Dubai, United Arab Emirates</div>
+      </div>
+      <div class="ci-card" id="ci-phone">
+        <div class="ci-card__icon"><i class="fa-solid fa-phone"></i></div>
+        <div class="ci-card__label">Call Us</div>
+        <div class="ci-card__value"><a href="tel:+971525790009" style="color:inherit;">+971 52 579 0009</a></div>
+        <div class="ci-card__sub">Available 7 days a week</div>
+      </div>
+      <div class="ci-card" id="ci-email">
+        <div class="ci-card__icon"><i class="fa-solid fa-envelope"></i></div>
+        <div class="ci-card__label">Email Us</div>
+        <div class="ci-card__value"><a href="mailto:info@premiumelitemarine.ae" style="color:inherit;">info@premiumelitemarine.ae</a></div>
+        <div class="ci-card__sub">Response within 24 hours</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENQUIRY FORM -->
+<section class="contact-form-section section" id="enquiry" aria-label="Enquiry form">
+  <div class="container">
+    <div class="contact-form-wrap">
+      <!-- Aside -->
+      <div class="cfw-aside reveal">
+        <span class="section-label">Send an Enquiry</span>
+        <div class="gold-line"></div>
+        <h2 class="cfw-aside__title">Tell Us About Your Vessel</h2>
+        <p class="cfw-aside__text">Fill in the form and our team will review your enquiry and get back to you promptly. We handle all types of vessels and budgets.</p>
+        <ul class="cfw-aside__list">
+          <li class="cfw-aside__item"><i class="fa-solid fa-circle-check"></i> Free, no-obligation quotes</li>
+          <li class="cfw-aside__item"><i class="fa-solid fa-circle-check"></i> Fast response guaranteed</li>
+          <li class="cfw-aside__item"><i class="fa-solid fa-circle-check"></i> On-site inspections available</li>
+          <li class="cfw-aside__item"><i class="fa-solid fa-circle-check"></i> All vessel types welcome</li>
+          <li class="cfw-aside__item"><i class="fa-solid fa-circle-check"></i> Submitting redirects to WhatsApp</li>
+        </ul>
+      </div>
+
+      <!-- Form -->
+      <div class="reveal reveal-delay-2">
+        <form class="enquiry-form glass-card" id="enquiry-form" novalidate aria-label="Enquiry form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="c-name" class="form-label">Full Name <span>*</span></label>
+              <input type="text" id="c-name" name="name" class="form-control" placeholder="Your full name" required autocomplete="name"/>
+            </div>
+            <div class="form-group">
+              <label for="c-phone" class="form-label">Phone Number</label>
+              <input type="tel" id="c-phone" name="phone" class="form-control" placeholder="+971 52 579 0009" autocomplete="tel"/>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="c-email" class="form-label">Email Address <span>*</span></label>
+            <input type="email" id="c-email" name="email" class="form-control" placeholder="your@email.com" required autocomplete="email"/>
+          </div>
+
+          <div class="form-group">
+            <label for="c-service" class="form-label">Service Required <span>*</span></label>
+            <select id="c-service" name="service" class="form-control" required>
+              <option value="" disabled selected>Select a service…</option>
+              <option value="Yacht Maintenance">Yacht Maintenance</option>
+              <option value="Yacht Cleaning">Yacht Cleaning</option>
+              <option value="Engine Repair">Engine Repair</option>
+              <option value="Electrical Systems">Electrical Systems</option>
+              <option value="Plumbing Services">Plumbing Services</option>
+              <option value="Fiberglass Repair">Fiberglass Repair</option>
+              <option value="Painting &amp; Polishing">Painting &amp; Polishing</option>
+              <option value="Yacht Detailing">Yacht Detailing</option>
+              <option value="AC Repair &amp; Maintenance">AC Repair &amp; Maintenance</option>
+              <option value="Navigation Systems Setup">Navigation Systems Setup</option>
+              <option value="Safety Equipment Installation">Safety Equipment Installation</option>
+              <option value="Yacht Refitting">Yacht Refitting</option>
+              <option value="Docking Assistance">Docking Assistance</option>
+              <option value="Marine Inspections">Marine Inspections</option>
+              <option value="Emergency Repairs">Emergency Repairs</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="c-message" class="form-label">Message</label>
+            <textarea id="c-message" name="message" class="form-control" rows="5" placeholder="Tell us about your vessel, any issues you've noticed, preferred schedule…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--whatsapp btn--large form-submit" id="enquiry-submit">
+            <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHATSAPP CTA -->
+<section class="section section-mid" id="whatsapp-cta" aria-label="WhatsApp contact">
+  <div class="container" style="max-width:700px;">
+    <div class="wa-card reveal">
+      <div class="wa-card__icon"><i class="fa-brands fa-whatsapp"></i></div>
+      <h2 class="wa-card__title">Chat With Us on WhatsApp</h2>
+      <p class="wa-card__sub">The fastest way to reach our team. Send us a message and we'll respond within minutes during business hours.</p>
+      <a href="https://wa.me/971525790009" class="btn btn--whatsapp btn--large pulse-gold" target="_blank" rel="noopener" id="wa-cta-main">
+        <i class="fa-brands fa-whatsapp"></i> Open WhatsApp Chat
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <div class="footer__logo-name">PREMIUM ELITE</div>
+        <div class="footer__logo-tagline">Marine Services LLC</div>
+        <p class="footer__bio">Dubai's premier luxury marine services company. Engineering excellence since 2009.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/971525790009" class="footer__social-link" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer__col-title">Quick Links</h4>
+        <ul class="footer__col-links">
+          <li><a href="index.html"    class="footer__col-link">Home</a></li>
+          <li><a href="about.html"    class="footer__col-link">About Us</a></li>
+          <li><a href="services.html" class="footer__col-link">Our Services</a></li>
+          <li><a href="gallery.html"  class="footer__col-link">Gallery</a></li>
+          <li><a href="contact.html"  class="footer__col-link">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__col-title">Services</h4>
+        <ul class="footer__col-links">
+          <li><a href="services.html" class="footer__col-link">Yacht Maintenance</a></li>
+          <li><a href="services.html" class="footer__col-link">Engine Repair</a></li>
+          <li><a href="services.html" class="footer__col-link">Yacht Detailing</a></li>
+          <li><a href="services.html" class="footer__col-link">Fiberglass Repair</a></li>
+          <li><a href="services.html" class="footer__col-link">Emergency Repairs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__col-title">Contact</h4>
+        <div class="footer__contact-item"><i class="fa-solid fa-location-dot"></i><span class="footer__contact-text">Dubai Marina, Dubai, UAE</span></div>
+        <div class="footer__contact-item"><i class="fa-solid fa-phone"></i><span class="footer__contact-text">+971 52 579 0009</span></div>
+        <div class="footer__contact-item"><i class="fa-solid fa-envelope"></i><span class="footer__contact-text">info@premiumelitemarine.ae</span></div>
+        <a href="https://wa.me/971525790009" class="btn btn--whatsapp" style="margin-top:1rem;font-size:.76rem;padding:.6rem 1.2rem;" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+        </a>
+      </div>
+    </div>
+    <div class="footer__partners">
+      <p class="footer__partners-label">Our Partners</p>
+      <div class="footer__partners-links">
+        <a href="https://d3yachtcharter.com/"        class="footer__partner-link" target="_blank" rel="noopener">D3 Yacht Charter</a>
+        <span style="color:var(--gray-600)">·</span>
+        <a href="https://dubaipremiumyachts.com/"    class="footer__partner-link" target="_blank" rel="noopener">Dubai Premium Yachts</a>
+        <span style="color:var(--gray-600)">·</span>
+        <a href="https://thepremiumwatersports.com/" class="footer__partner-link" target="_blank" rel="noopener">Dubai Premium Watersports</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">© 2024 Premium Elite Marine Services LLC. All rights reserved.</p>
+      <a href="contact.html" class="footer__bottom-link">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
